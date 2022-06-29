@@ -1,13 +1,11 @@
 package com.skilldistillery.foodtruck.app;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 import com.skilldistillery.foodtruck.entities.FoodTruck;
 
 public class FoodTruckApp {
 private FoodTruck[] fleetOfFoodTrucks= new FoodTruck[5];
-private final int maxTrucks=5;
 
 public static void main(String[] args) {
 	
@@ -122,7 +120,7 @@ private void topTruck() {
 	int count = 0;
 	String highestFT = "";
 	
-	for (int i = 0; i<= fleetOfFoodTrucks.length; i++) {
+	for (int i = 0; i< fleetOfFoodTrucks.length; i++) {
 		
 		if(fleetOfFoodTrucks[i] == null) {
 			break;
@@ -132,7 +130,7 @@ private void topTruck() {
 			
 			topTruck = fleetOfFoodTrucks[i].getRating();
 			highestFT = fleetOfFoodTrucks[i].getName();
-			count = 1;
+			count= i;
 		}
 	}
 	System.out.println("The Food truck with the highest rating is: ");

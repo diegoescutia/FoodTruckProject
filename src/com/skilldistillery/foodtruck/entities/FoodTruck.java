@@ -15,7 +15,7 @@ public FoodTruck(String name, String foodType, int rating) {
 	this.name = name;
 	this.foodType = foodType;
 	this.rating = rating;
-	this.nextId++;
+	nextId++;
 	this.id= nextId;
 }
 
@@ -52,7 +52,7 @@ public void setRating(int rating) {
 }
 
 public String toString() {
-	return "FoodTruck name: " + name + ", foodType: " + foodType + ", rating: " + rating + ", id: "+id+"]";
+	return "FoodTruck name: " + name + ", foodType: " + foodType + ", rating: " + rating + ", id: "+ id;
 }
 
 
