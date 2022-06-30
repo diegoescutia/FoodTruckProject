@@ -35,7 +35,7 @@ private void truckMaker() {
 		}
 	System.out.println("Enter the Food Type:");
 	String foodType = scan.nextLine();
-	System.out.println("Enter Rating: (1= projectile vomit, 5= i'll trade my left nut for this");
+	System.out.println("Enter Rating: (1= Awful, 5= Amazing ");
 	int score = scan.nextInt();
 	while(true) {
 		if(score <= 5) {
@@ -135,6 +135,7 @@ private void topTruck() {
 	}
 	System.out.println("The Food truck with the highest rating is: ");
 	System.out.println(fleetOfFoodTrucks[count].toString());
+	
 }
 
 private void quit() {
