@@ -35,7 +35,7 @@ private void truckMaker() {
 		}
 	System.out.println("Enter the Food Type:");
 	String foodType = scan.nextLine();
-	System.out.println("Enter Rating: (1= Awful, 5= Amazing ");
+	System.out.println("Enter Rating: (1= Never again, 5= Amazing ");
 	int score = scan.nextInt();
 	while(true) {
 		if(score <= 5) {
